@@ -157,7 +157,8 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("image.jpg") no-repeat center;
+    background: url("image.jpg") no-repeat;
+    background-position: 60% 50%;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -206,7 +207,7 @@ section .title::after{
 }
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "who I am";
 }
 .about .about-content .left{
     width: 45%;
@@ -247,24 +248,26 @@ section .title::after{
     color: #2878c9;
     background: none;
 }
-/* services section styling */
+/* projects section styling */
 
 .hyper{
     color:#fff
 }
 
-.services, .teams{
+.services, .teams, .contact{
     color:#fff;
     background: #111;
 }
+
 .services .title::before,
 .teams .title::before{
     background: #fff;
+    width: 170px;
 }
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "last works";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -292,85 +295,62 @@ section .title::after{
 .services .serv-content .card:hover i{
     color: #fff;
 }
+
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+
+
+
 /* skills section styling */
+
+
 .skills .title::after{
-    content: "what i know";
+    content: "what I know";
 }
+
+.skills .skills-content {
+    align-items: baseline;
+}
+
+.info {
+    align-items: right;
+}
+
 .skills .skills-content .column{
-    width: calc(50% - 30px);
+    float: center;
+    width: 33.33%;
 }
-.skills .skills-content .left .text{
+
+.skills .skills-content span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: left;
 }
-.skills .skills-content .left p{
-    text-align: justify;
-}
-.skills .skills-content .left a{
-    display: inline-block;
-    background: #2878c9;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #2878c9;
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
+
+i{
+    font-size: 30px;
+    padding: 2px;
+    padding-right: 10px;
     color: #2878c9;
-    background: none;
+    vertical-align:sub;
 }
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #2878c9;
-}
-.skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 70%;
-}
+
+
+
+
 /* teams section styling */
+
+
 .teams .title::after{
     content: "who with me";
 }
@@ -433,17 +413,30 @@ section .title::after{
     background: #2878c9!important;
 }
 /* contact section styling */
+
+.contact{
+    margin-bottom: -10px;
+}
+
+.contact .title::before{
+    background: #fff;
+    width: 200px;
+}
+
 .contact .title::after{
-    content: "get in touch";
+    background: #111;
+    content: "where to find me";
 }
 .contact .contact-content .column{
-    width: calc(50% - 30px);
+    width: calc(90%);
+    align-items: center;
 }
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .contact .contact-content .left p{
     text-align: justify;
 }
@@ -452,88 +445,41 @@ section .title::after{
 }
 .contact .contact-content .row{
     display: flex;
-    height: 65px;
+    height: 55px;
     align-items: center;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
+    margin-top: 20px;
 }
 .contact .contact-content .row i{
-    font-size: 25px;
+    font-size: 30px;
     color: #2878c9;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #555;
 }
-.contact .right form .fields{
-    display: flex;
+
+.contact a{
+    color: #fff
 }
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea{
-  padding-top: 10px;
-  resize: none;
-}
-.contact .right form .button-area{
-  display: flex;
-  align-items: center;
-}
-.right form .button-area button{
-  color: #fff;
-  display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: #2878c9;
-  border: 2px solid #2878c9;
-  transition: all 0.3s ease;
-}
-.right form .button-area button:hover{
-  color: #2878c9;
-  background: none;
-}
+
 /* footer section styling */
+
 footer{
-    background: #111;
+    background: #fff;
     padding: 15px 23px;
-    color: #fff;
+    color: rgba(65, 63, 63, 0.993);
     text-align: center;
 }
+
+footer span .lio2{
+    color: #2878c9;
+}
+
 footer span a{
     color: #2878c9;
     text-decoration: none;
@@ -541,6 +487,7 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -634,6 +581,7 @@ footer span a:hover{
         width: 100%;
     }
 }
+
 @media (max-width: 500px) {
     .home .home-content .text-2{
         font-size: 50px;
@@ -663,4 +611,8 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    footer span .hide{
+        display: none;
+    }
+
 }
