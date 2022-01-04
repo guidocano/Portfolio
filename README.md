@@ -1,4 +1,4 @@
 # Portfolio
-Portfolio de proyectos y aptitudes.
+Portfolio Guido Calciano.
 
 Ver online: https://guidocano.github.io/Portfolio/
