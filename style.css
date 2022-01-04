@@ -408,6 +408,15 @@ color:#111;
     text-align: left;
 }
 
+#tecno span{
+   font-weight: 600;
+}
+
+#lang{
+    font-weight: 600;
+ }
+
+
 .skills i{
     font-size: 30px;
     padding: 2px;
