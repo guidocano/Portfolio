@@ -33,13 +33,14 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, .rts, footer{
+.about, .services, .skills, .teams, .contact, .rts, .rtsskills, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
 .rts .rts-content,
 .services .serv-content,
-.skills .skills-content,
+.skills .skills-content, 
+.rtsskills .rtsskills-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -318,9 +319,6 @@ color:#111;
 
 /* projects section styling */
 
-
-
-
 .hyper{
     color:#fff
 }
@@ -372,6 +370,11 @@ color:#111;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+
+
+
+
 
 
 
@@ -567,6 +570,84 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+
+
+/* rtsskills section styling */
+
+
+
+/* .rts-images{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.rtsskills .rtsskills-content .column img{
+    width:40vw;
+    border:#333;
+    border-style: solid;
+    margin:10px;
+} */
+
+
+.rts-images{
+    display:flex;
+    flex-wrap: wrap;
+    width:90vw;
+    align-items: center;
+    text-align: center;
+}
+
+.rtsskills .rtsskills-content .column img{
+    width: 550px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    border:#999;
+    border-style: solid;
+}
+
+.rtsskills{
+    background: #111;
+}
+
+.rtsskills .title{
+    background: #111;
+    color: #fff;
+}
+
+.rtsskills .title::before,
+.teams .title::before{
+    background: #fff;
+    width: 165px;
+}
+
+.rtsskills .title::after{
+    content: "more info";
+    background: #111;
+}
+
+.rtsskills .rtsskills-content {
+    align-items: baseline;
+    color: #fff;
+}
+
+.rtsskills .rtsskills-content span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.rtsskills .rtsskills-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
