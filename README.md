@@ -1,8 +1,8 @@
 # Portfolio
 Portfolio Guido Calciano.
 
-Ver online: https://guidocano.github.io/Portfolio/
+Open site: https://guidocano.github.io/Portfolio/
 
 ----------------------
 
-Tutorial por https://www.codingnepalweb.com/, adaptaciones y agregados realizados por mi.
+Tutorial by https://www.codingnepalweb.com/, adapted by me.
