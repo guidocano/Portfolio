@@ -161,7 +161,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("image.jpg") no-repeat;
+    background: #222 url("image.jpg") no-repeat;
     background-position: 60% 50%;
     height: 100vh;
     color: #fff;
