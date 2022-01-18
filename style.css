@@ -285,7 +285,7 @@ color:#111;
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "last works";
+    content: "latest works";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -295,6 +295,7 @@ color:#111;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
 .services .serv-content .card:hover{
     background: #2878c9;
