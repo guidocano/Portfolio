@@ -159,6 +159,10 @@ section .title::after{
     filter: brightness(90%);
 }
 /* home section styling */
+.home img{
+    display:none;
+}
+
 .home{
     display: flex;
     background: #222 url("image.jpg") no-repeat;
