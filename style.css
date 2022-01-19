@@ -218,6 +218,8 @@ section .title::after{
     color: #2878c9;
     background: none;
 }
+
+
 /* about section styling */
 .about .title::after{
     content: "who I am";
@@ -267,6 +269,30 @@ color:#111;
     background: none;
 }
 
+.cacdiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.cac{
+    width: 130px;
+    vertical-align:bottom;
+    padding-right: 9px;
+    padding-bottom: 5px;
+}
+
+.cactext{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bug{
+    margin-right:4px;
+}
 
 
 
