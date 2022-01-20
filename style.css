@@ -270,7 +270,7 @@ color:#111;
 }
 
 .cacdiv{
-    display: flex;
+    display:inline-flex;
     flex-wrap: wrap;
     align-items: center;
     padding-top: 5px;
@@ -278,10 +278,16 @@ color:#111;
 }
 
 .cac{
-    width: 130px;
+    height: 42px;
     vertical-align:bottom;
     padding-right: 9px;
     padding-bottom: 5px; 
+}
+
+.coder{
+    height: 60px;
+    vertical-align:bottom;
+    margin-right: 9px;
 }
 
 .cactext{
