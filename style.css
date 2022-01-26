@@ -277,6 +277,15 @@ color:#111;
     padding-bottom: 15px;
 }
 
+.coderdiv{
+    display:inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    display: none;
+}
+
 .cac{
     height: 42px;
     vertical-align:bottom;
