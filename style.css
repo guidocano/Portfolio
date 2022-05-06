@@ -47,6 +47,7 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+
 section .title{
     position: relative;
     text-align: center;
@@ -231,6 +232,12 @@ color:#111;
 .about .about-content .left{
     width: 45%;
 }
+
+.about .about-content .left2{
+    width: 50%;
+}
+
+
 .about .about-content .left img{
     height: 400px;
     width: 400px;
@@ -239,6 +246,10 @@ color:#111;
 }
 .about .about-content .right{
     width: 55%;
+}
+
+.about .about-content .right2{
+    width: 50%;
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -269,30 +280,48 @@ color:#111;
     background: none;
 }
 
-.cacdiv{
-    display:inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-top: 5px;
-    padding-bottom: 15px;
+
+.coursesContainer{
+    margin-top: 50px;
 }
 
-.coderdiv{
-    display:inline-flex;
-    flex-wrap: wrap;
+.about-content2 {
+    align-items:baseline!important;
+}
+
+.text2{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.courseDiv{
     align-items: center;
     padding-top: 5px;
     padding-bottom: 15px;
-    display: none;
+    display: inline-flex;
 }
 
 .cac{
-    height: 42px;
+    height: 30px;
     vertical-align:bottom;
     padding-right: 9px;
-    padding-bottom: 5px; 
+
 }
 
+.sabioImage{
+    height: 42px;
+    padding-right: 9px;
+}
+
+.ispcImage{
+    height: 43px;
+    padding-right: 9px;
+}
+
+.textStrong{
+    font-weight: 600;
+}
 .coder{
     height: 60px;
     vertical-align:bottom;
@@ -300,16 +329,10 @@ color:#111;
 }
 
 .cactext{
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     flex-wrap: wrap;
 }
-
-#bug{
-    margin-right:4px;
-}
-
-
 
 /* projects section styling */
 
@@ -798,6 +821,12 @@ footer span a:hover{
     .services .serv-content .card{
         width: 100%;
     }
+
+    .text2{
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -834,5 +863,7 @@ footer span a:hover{
     footer span .hide{
         display: none;
     }
+
+
 
 }
