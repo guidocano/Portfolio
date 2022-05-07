@@ -341,21 +341,31 @@ color:#2878c9;
 }
 
 .cac{
-    height: 30px;
+    height: 42px;
     vertical-align:bottom;
-    padding-right: 9px;
+    margin-right: 10px;
 
 }
 
 .sabioImage{
-    height: 42px;
-    padding-right: 9px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 45px;
+    border: 2px solid rgba(65, 63, 63, 0.2);
 }
 
 .ispcImage{
+    height: 42px;
+    border-radius: 45px;
+    margin-right: 10px;
+
+}
+
+.udemyImage{
     height: 43px;
     border-radius: 45px;
     margin-right: 10px;
+    border: 2px solid rgba(65, 63, 63, 0.2);
 }
 
 .textStrong{
