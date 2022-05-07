@@ -60,6 +60,17 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
+
+section .title2{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 section .title::before{
     content: "";
     position: absolute;
@@ -70,7 +81,20 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
-section .title::after{
+
+section .title2::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+
+section .title2::after, .title::after{
     position: absolute;
     bottom: -8px;
     left: 50%;
@@ -80,6 +104,7 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
+
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -230,8 +255,13 @@ section .title::after{
 }
 
 .about .title2::after{
-color:#111;
+    content: "</>";
 }
+
+.about .title2::after{
+color:#2878c9;
+}
+
 .about .about-content .left{
     width: 40%;
 }
