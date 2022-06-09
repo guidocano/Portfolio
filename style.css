@@ -194,7 +194,7 @@ section .title2::after, .title::after{
 
 .home{
     display: flex;
-    background: #222 url("image.jpg") no-repeat;
+    background: #222 url("image.png") no-repeat;
     background-position: 60% 50%;
     height: 100vh;
     color: #fff;
@@ -203,6 +203,7 @@ section .title2::after, .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
+
 .home .max-width{
   width: 100%;
   display: flex;
@@ -879,6 +880,11 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+
+    .home {
+        background-position: 30% 50%;
+    }
+
     .home .home-content .text-2,
     .rts .rts-content .text-2{
         font-size: 50px;
@@ -896,6 +902,10 @@ footer span a:hover{
         height: 270px;
         width: 270px;
         object-fit: cover;
+    }
+
+    .cvs {
+        margin-top: -25px;
     }
 
     .card-hidden {
