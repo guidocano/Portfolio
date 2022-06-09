@@ -898,6 +898,10 @@ footer span a:hover{
         object-fit: cover;
     }
 
+    .card-hidden {
+        display: none;
+    }
+
     .contact .right form .fields{
         flex-direction: column;
     }
