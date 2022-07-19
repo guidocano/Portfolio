@@ -66,7 +66,7 @@ section .title2{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-top: 60px;
+    margin-top: 0px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -251,6 +251,8 @@ section .title2::after, .title::after{
 
 
 /* about section styling */
+
+
 .about .title::after{
     content: "who I am";
 }
@@ -308,6 +310,7 @@ color:#2878c9;
     border-radius: 6px;
     border: 2px solid #2878c9;
     transition: all 0.3s ease;
+    /* margin-bottom: 100px; */
 }
 
 .buttonContainer {
@@ -325,6 +328,12 @@ color:#2878c9;
 
 .coursesContainer{
     margin-top: 50px;
+}
+
+/* COURSES STYLE */
+
+.courses {
+    margin-top: -110px!important;
 }
 
 .about-content2 {
