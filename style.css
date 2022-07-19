@@ -389,6 +389,10 @@ color:#2878c9;
 
 /* projects section styling */
 
+.services {
+    background: #222 url("image.png") no-repeat!important;
+}
+
 .hyper{
     color:#fff
 }
@@ -417,6 +421,7 @@ color:#2878c9;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 20px;
+    border: 5px #111 solid;
 }
 .services .serv-content .card:hover{
     background: #2878c9;
@@ -573,6 +578,7 @@ color:#2878c9;
 
 .contact{
     margin-bottom: -10px;
+    background: #222 url("image.png") no-repeat!important;
 }
 
 .contact .title::before{
