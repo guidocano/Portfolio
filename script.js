@@ -191,7 +191,7 @@ function changejquery () {
     let checkIcon = btn_jquery.innerHTML;
     console.log(checkIcon)
     if (checkIcon === " jQuery") {
-        btn_jquery.innerHTML = ` <i class="fa-solid fa-file-invoice-dollar jquery"></i>`
+        btn_jquery.innerHTML = ` <i class="fa-solid fa-hand-holding-dollar jquery"></i>`
     } else {
         btn_jquery.innerHTML = " jQuery"
     }
