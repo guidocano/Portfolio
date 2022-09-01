@@ -150,9 +150,12 @@ section .title2::after, .title::after{
 .navbar .menu li a:hover{
     color: #2878c9;
 }
+
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: white;
+    text-shadow: 2px 2px 5px #014386;
 }
+
 /* menu btn styling */
 .menu-btn{
     color: #fff;
@@ -791,9 +794,8 @@ footer span a:hover{
 }
 
 
-
 /* responsive media query start */
-@media (max-width: 1104px) {
+/* @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
@@ -807,8 +809,13 @@ footer span a:hover{
     .max-width{
         padding: 0 50px;
     }
-}
-@media (max-width: 947px){
+} */
+
+@media (max-width: 1200px){
+
+    .rts .left{
+        width: 100%;
+    } 
     .menu-btn{
         display: block;
         z-index: 999;
