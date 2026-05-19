@@ -125,10 +125,10 @@ section .title2::after, .title::after{
 }
 .navbar .logo a{
     color: #fff;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
 }
-.navbar .logo a span{
+.navbar .logo-color{
     color: #2878c9;
     transition: all 0.3s ease;
 }
@@ -651,7 +651,7 @@ footer{
     text-align: center;
 }
 
-footer span .lio2{
+footer span .lio2 {
     color: #2878c9;
 }
 
