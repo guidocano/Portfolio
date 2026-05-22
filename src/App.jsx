@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from 'react';
-import Typed from 'typed.js';
+import { useState, useEffect, useRef } from "react";
+import Typed from "typed.js";
 
 import "./App.css";
 import { Images } from "./assets/images";
@@ -17,56 +17,96 @@ function App() {
       setIsSticky(window.scrollY > 20);
       setShowScrollBtn(window.scrollY > 500);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     const typed1 = new Typed(el1.current, {
-      strings: ["a developer.", "creative.", "adaptable.", "a problem solver."],
+      strings: ["a developer.", "a critical thinker.", "a technical problem solver.", "a business solution analyst."],
       typeSpeed: 100,
       backSpeed: 60,
-      loop: true
+      loop: true,
     });
 
     const typed2 = new Typed(el2.current, {
       strings: ["a developer."],
       typeSpeed: 200,
-      loop: false
+      loop: false,
     });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
       typed1.destroy();
       typed2.destroy();
     };
   }, []);
 
   return (
-    <div style={{ scrollBehavior: 'smooth' }}>
-      
+    <div style={{ scrollBehavior: "smooth" }}>
       {/* Botón Scroll-Up */}
-      <button 
-        className={`scroll-up-btn ${showScrollBtn ? 'show' : ''}`}
-        onClick={() => window.scrollTo({ top: 0, behavior: 'auto' })}
+      <button
+        className={`scroll-up-btn ${showScrollBtn ? "show" : ""}`}
+        onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
       >
         <i className="fas fa-angle-up"></i>
       </button>
 
       {/* Navbar */}
-      <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
+      <nav className={`navbar ${isSticky ? "sticky" : ""}`}>
         <div className="max-width">
           <div className="logo">
             <a href="#">
               <span className="logo-color">guidodev</span>.com.ar
+              <span> v0.64</span>
             </a>
           </div>
-          <ul className={`menu ${isMenuOpen ? 'active' : ''}`}>
-            <li><a href="#home" className="menu-btn" onClick={() => setIsMenuOpen(false)}>Home</a></li>
-            <li><a href="#about" className="menu-btn" onClick={() => setIsMenuOpen(false)}>About me</a></li>
-            <li><a href="#services" className="menu-btn" onClick={() => setIsMenuOpen(false)}>Projects</a></li>
-            <li><a href="#skills" className="menu-btn" onClick={() => setIsMenuOpen(false)}>Skills</a></li>
-            <li><a href="#contact" className="menu-btn" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
+          <ul className={`menu ${isMenuOpen ? "active" : ""}`}>
+            <li>
+              <a
+                href="#home"
+                className="menu-btn"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="menu-btn"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About me
+              </a>
+            </li>
+            <li>
+              <a
+                href="#services"
+                className="menu-btn"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skills"
+                className="menu-btn"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Skills
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="menu-btn"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </a>
+            </li>
           </ul>
           <div className="menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+            <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
           </div>
         </div>
       </nav>
@@ -104,7 +144,11 @@ function App() {
               </p>
             </div>
             <div className="buttonContainer cvs">
-              <a href="../public/assets/CV_Guido_Calciano_Software_Dev.pdf" target="_blank" rel="noreferrer">
+              <a
+                href="./assets/CV_Guido_Calciano_Software_Dev.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Download CV
               </a>
             </div>
@@ -117,39 +161,67 @@ function App() {
         <div className="max-width">
           <h2 className="title">My Projects</h2>
           <div className="serv-content">
-            
             <div className="card">
-              <a href="https://guidocano.github.io/movies/" target="_blank" rel="noreferrer" className="hyper">
+              <a
+                href="https://guidocano.github.io/movies/"
+                target="_blank"
+                rel="noreferrer"
+                className="hyper"
+              >
                 <div className="box">
                   <i className="fa-solid fa-ticket"></i>
                   <div className="text">Cinema Website</div>
-                  <p>Register and login, movie search, add to favs. React <i className="fa-brands fa-react icon-small"></i></p>
+                  <p>
+                    Register and login, movie search, add to favs. React{" "}
+                    <i className="fa-brands fa-react icon-small"></i>
+                  </p>
                 </div>
               </a>
             </div>
 
             <div className="card">
-              <a href="https://guidocano.github.io/google-clone/" target="_blank" rel="noreferrer" className="hyper">
+              <a
+                href="https://guidocano.github.io/google-clone/"
+                target="_blank"
+                rel="noreferrer"
+                className="hyper"
+              >
                 <div className="box">
                   <i className="fa-brands fa-google"></i>
                   <div className="text">Google Clone</div>
-                  <p>Search engine layout with Google, Youtube and Img API. React <i className="fa-brands fa-react icon-small"></i></p>
+                  <p>
+                    Search engine layout with Google, Youtube and Img API. React{" "}
+                    <i className="fa-brands fa-react icon-small"></i>
+                  </p>
                 </div>
               </a>
             </div>
 
             <div className="card">
-              <a href="https://guidocano.github.io/take-note/" target="_blank" rel="noreferrer" className="hyper">
+              <a
+                href="https://guidocano.github.io/take-note/"
+                target="_blank"
+                rel="noreferrer"
+                className="hyper"
+              >
                 <div className="box">
                   <i className="take-note fa-solid fa-note-sticky"></i>
                   <div className="text">Take Note!</div>
-                  <p>Write, edit and delete your notes. Filter and archive. React <i className="fa-brands fa-react icon-small"></i></p>
+                  <p>
+                    Write, edit and delete your notes. Filter and archive. React{" "}
+                    <i className="fa-brands fa-react icon-small"></i>
+                  </p>
                 </div>
               </a>
             </div>
 
             <div className="card">
-              <a href="https://guidocano.github.io/travel-photo-album/" target="_blank" rel="noreferrer" className="hyper">
+              <a
+                href="https://guidocano.github.io/travel-photo-album/"
+                target="_blank"
+                rel="noreferrer"
+                className="hyper"
+              >
                 <div className="box">
                   <i className="fa-solid fa-panorama"></i>
                   <div className="text">Travel Photo Album</div>
@@ -164,13 +236,21 @@ function App() {
                 <div className="box">
                   <i className="fas fa-road"></i>
                   <div className="text">Road Trip Simulator</div>
-                  <p>Text-based adventure game developed with Python. <b>Play it!</b></p>
+                  <p>
+                    Text-based adventure game developed with Python.{" "}
+                    <b>Play it!</b>
+                  </p>
                 </div>
               </a>
             </div>
 
             <div className="card">
-              <a href="https://github.com/guidocano" target="_blank" rel="noreferrer" className="hyper">
+              <a
+                href="https://github.com/guidocano"
+                target="_blank"
+                rel="noreferrer"
+                className="hyper"
+              >
                 <div className="box">
                   <i className="fas fa-code"></i>
                   <div className="text">Other Projects!</div>
@@ -179,7 +259,6 @@ function App() {
                 </div>
               </a>
             </div>
-
           </div>
         </div>
       </section>
@@ -190,118 +269,103 @@ function App() {
           <h2 className="title">My skills</h2>
           <div className="skills-content">
             <div className="column" id="tecno">
-              <div className="text">Technologies:</div>
-              <div className="info">
-                <div>
-                  <div className="info">
-                    <i className="fa-brands fa-react"></i>
-                    <span>React.js</span>
-                  </div>
-                </div>
-                <div>
-                  <div className="info">
-                    <i className="fa-solid fa-file-invoice-dollar"></i>
-                    <span>jQuery</span>
-                  </div>
-                </div>
-                <div>
-                  <div className="info">
-                    <i className="fab fa-js-square"></i>
-                    <span>Javascript</span>
-                  </div>
-                </div>
-                <div>
-                  <i className="fab fa-python"></i>
-                  <span> Python</span>
-                </div>
-              </div>
+
+              {/* <div className="text">Software Engineering</div> */}
+              <div className="text">Frontend & Web</div>
               <div>
-                <div className="info">
-                  <i className="fab fa-css3-alt"></i>
-                  <span>CSS</span>
-                </div>
+                <i className="fa-brands fa-react"></i>
+                <span>React.js / Next.js</span>
               </div>
+
               <div>
-                <div className="info">
-                  <i className="fab fa-bootstrap"></i>
-                  <span>Bootstrap</span>
-                </div>
+                <i className="fab fa-js-square"></i>
+                <span>JavaScript / TypeScript</span>
               </div>
+
+              {/* <div>
+                <i class="fa-brands fa-node-js"></i>
+                <span>Node.js / Express</span>
+              </div> */}
+
               <div>
-                <div className="info">
-                  <i className="fa-solid fa-repeat"></i>
-                  <span>Ajax</span>
-                </div>
+                <i className="fas fa-database"></i>
+                <span>SQL</span>
               </div>
+
               <div>
-                <div className="info">
-                  <i className="fas fa-database"></i>
-                  <span>SQL</span>
-                </div>
+                <i className="fa-brands fa-git-alt"></i>
+                <span>Git</span>
               </div>
+
               <div>
-                <div className="info">
-                  <i className="fa-brands fa-git-alt"></i>
-                  <span>Git</span>
-                </div>
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML5 / CSS3</span>
               </div>
+
             </div>
 
             <div className="column">
-              <div className="text">Soft Skills:</div>
+              <div className="text">Business Applications & Cloud</div>
+
               <div>
-                <div className="info">
-                  <i className="fas fa-toolbox"></i>
-                  <span> Problem-Solving</span>
-                </div>
+                <i class="fa-brands fa-windows"></i>
+                <span>Power Apps</span>
               </div>
+
               <div>
-                <div className="info">
-                  <i className="far fa-lightbulb"></i>
-                  <span>&ensp;Creativity</span>
-                </div>
-                <div className="info">
-                  <i className="far fa-handshake"></i>
-                  <span>Communication</span>
-                </div>
-                <div className="info">
-                  <i className="fas fa-users"></i>
-                  <span>Teamwork</span>
-                </div>
-                <div className="info">
-                  <i className="fas fa-door-open"></i>
-                  <span>Open-Mindedness</span>
-                </div>
+                <i class="fa-brands fa-windows"></i>
+                <span>Power Automate</span>
+              </div>
+
+              <div>
+               <i class="fa-brands fa-windows"></i>
+                <span>Copilot Studio</span>
+              </div>
+
+              <div>
+               <i class="fa-brands fa-windows"></i>
+                <span>SharePoint</span>
               </div>
             </div>
 
             <div className="column">
               <div className="text">Languages:</div>
               <div>
-                <div className="info">
+                <div>
                   <i className="fas fa-globe-europe"></i>
                   <span id="lang"> English: Bilingual</span>
                 </div>
-              </div>
-              <div>
-                <div className="info">
+
+                <div>
                   <i className="fas fa-globe-americas"></i>
                   <span id="lang"> Spanish:</span> <span> Native</span>
                 </div>
-                <br />
-              </div>
-              <div className="text">Others:</div>
+
+              <br/>
+              <div className="text">Soft Skills:</div>
               <div>
-                <div className="info">
-                  <i className="fas fa-images"></i>
-                  <span> Adobe Photoshop</span>
+                <div>
+                  <i className="fas fa-toolbox"></i>
+                  <span> Problem-Solving</span>
+                </div>
+
+                <div>
+<i class="fa-solid fa-chart-column"></i>
+                  <span>&ensp;Analytical Thinking</span>
+                </div>
+
+                <div>
+                  <i className="fas fa-users"></i>
+                  <span>Agile Teamwork</span>
+                </div>
+
+                <div>
+  <i class="fa-solid fa-code-compare"></i>
+                  <span>Adaptability</span>
                 </div>
               </div>
-              <div>
-                <div className="info">
-                  <i className="fa-solid fa-rocket"></i>
-                  <span> Postman</span>
-                </div>
+
+
               </div>
             </div>
           </div>
@@ -319,10 +383,16 @@ function App() {
                 <div>
                   <div className="courseDiv">
                     <a href="https://www.udemy.com/course/react-redux/">
-                      <img className="udemyImage" src={Images.ba} alt="logo codo a codo" />
+                      <img
+                        className="udemyImage"
+                        src={Images.ba}
+                        alt="logo codo a codo"
+                      />
                     </a>
                     <div className="cactext">
-                      <div className="textStrong">Modern React with Redux&nbsp</div>
+                      <div className="textStrong">
+                        Modern React with Redux&nbsp
+                      </div>
                       / Udemy, by Stephen Grider (2022)
                     </div>
                   </div>
@@ -330,20 +400,31 @@ function App() {
                 <div>
                   <div className="courseDiv">
                     <a href="https://sabio.la/">
-                      <img className="sabioImage" src={Images.sabio} alt="logo codo a codo" />
+                      <img
+                        className="sabioImage"
+                        src={Images.sabio}
+                        alt="logo codo a codo"
+                      />
                     </a>
                     <div className="cactext">
-                      <div className="textStrong">React Js&nbsp</div>/ Sabio School of Software Engineering (2022)
+                      <div className="textStrong">React Js&nbsp</div>/ Sabio
+                      School of Software Engineering (2022)
                     </div>
                   </div>
                 </div>
                 <div>
                   <div className="courseDiv">
                     <a href="https://sabio.la/">
-                      <img className="sabioImage" src={Images.sabio} alt="logo codo a codo" />
+                      <img
+                        className="sabioImage"
+                        src={Images.sabio}
+                        alt="logo codo a codo"
+                      />
                     </a>
                     <div className="cactext">
-                      <div className="textStrong">jQuery and Js Fundamentals&nbsp</div>
+                      <div className="textStrong">
+                        jQuery and Js Fundamentals&nbsp
+                      </div>
                       / Sabio School of Software Engineering (2022)
                     </div>
                   </div>
@@ -351,20 +432,33 @@ function App() {
                 <div>
                   <div className="courseDiv">
                     <a href="https://sabio.la/">
-                      <img className="sabioImage" src={Images.sabio} alt="logo codo a codo" />
+                      <img
+                        className="sabioImage"
+                        src={Images.sabio}
+                        alt="logo codo a codo"
+                      />
                     </a>
                     <div className="cactext">
-                      <div className="textStrong">REST Client and Ajax&nbsp</div> / Sabio School of Software Engineering (2022)
+                      <div className="textStrong">
+                        REST Client and Ajax&nbsp
+                      </div>{" "}
+                      / Sabio School of Software Engineering (2022)
                     </div>
                   </div>
                 </div>
                 <div>
                   <div className="courseDiv">
                     <a href="https://www.buenosaires.gob.ar/educacion/codo-codo">
-                      <img className="cac" src={Images.ba} alt="logo codo a codo" />
+                      <img
+                        className="cac"
+                        src={Images.ba}
+                        alt="logo codo a codo"
+                      />
                     </a>
                     <div className="cactext">
-                      <div className="textStrong">Codo a Codo 4.0 FullStack Python&nbsp</div>
+                      <div className="textStrong">
+                        Codo a Codo 4.0 FullStack Python&nbsp
+                      </div>
                       / Agencia de Aprendizaje a lo Largo de la Vida (2021)
                     </div>
                   </div>
@@ -378,10 +472,16 @@ function App() {
                 <div>
                   <div className="courseDiv">
                     <a href="https://www.buenosaires.gob.ar/educacion/codo-codo">
-                      <img className="cac" src={Images.ba} alt="logo codo a codo" />
+                      <img
+                        className="cac"
+                        src={Images.ba}
+                        alt="logo codo a codo"
+                      />
                     </a>
                     <div className="cactext">
-                      <div className="textStrong">Codo a Codo 4.0 React.js - GO &nbsp</div>
+                      <div className="textStrong">
+                        Codo a Codo 4.0 React.js - GO &nbsp
+                      </div>
                       / Agencia de Aprendizaje a lo Largo de la Vida (2022-)
                     </div>
                   </div>
@@ -389,10 +489,17 @@ function App() {
                 <div>
                   <div className="courseDiv">
                     <a href="https://www.ispc.edu.ar/tecnicatura-web/">
-                      <img className="ispcImage" src={Images.ispc2} alt="logo codo a codo" />
+                      <img
+                        className="ispcImage"
+                        src={Images.ispc2}
+                        alt="logo codo a codo"
+                      />
                     </a>
                     <div className="cactext">
-                      <div className="textStrong">Higher Technician in Web Development and Digital Apps&nbsp</div>
+                      <div className="textStrong">
+                        Higher Technician in Web Development and Digital
+                        Apps&nbsp
+                      </div>
                       / ISPC (2022-)
                     </div>
                   </div>
@@ -410,14 +517,19 @@ function App() {
           <div className="contact-content">
             <div className="column left">
               <div className="text">Get in Touch</div>
-              <p>You can find me on any of the following networks. Contact me for any question!</p>
+              <p>
+                You can find me on any of the following networks. Contact me for
+                any question!
+              </p>
               <br />
               <div className="icons">
                 <div className="row">
                   <i className="fas fa-map-marker-alt"></i>
                   <div className="info">
                     <div className="head">&ensp;CABA</div>
-                    <div className="sub-title">&ensp;Buenos Aires, Argentina.</div>
+                    <div className="sub-title">
+                      &ensp;Buenos Aires, Argentina.
+                    </div>
                   </div>
                 </div>
                 <div className="row">
@@ -432,14 +544,20 @@ function App() {
                 <div className="row">
                   <i className="fab fa-github"></i>
                   <div className="info">
-                    <div className="head"><a href="https://github.com/guidocano">/guidocano</a></div>
+                    <div className="head">
+                      <a href="https://github.com/guidocano">/guidocano</a>
+                    </div>
                     <div className="sub-title">Github.</div>
                   </div>
                 </div>
                 <div className="row">
                   <i className="fab fa-linkedin"></i>
                   <div className="info">
-                    <div className="head"><a href="https://www.linkedin.com/in/guidocalciano/">/guidocalciano</a></div>
+                    <div className="head">
+                      <a href="https://www.linkedin.com/in/guidocalciano/">
+                        /guidocalciano
+                      </a>
+                    </div>
                     <div className="sub-title">Linkedin.</div>
                   </div>
                 </div>
@@ -458,7 +576,6 @@ function App() {
           <span className="hide"> All rights reserved</span>.
         </span>
       </footer>
-
     </div>
   );
 }
