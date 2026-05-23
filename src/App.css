@@ -132,6 +132,12 @@ section .title2::after, .title::after{
     color: #2878c9;
     transition: all 0.3s ease;
 }
+
+.navbar .version{
+    color:  #fff;
+    opacity: 0.3;
+}
+
 .navbar.sticky .logo a span{
     color: #fff;
 }
