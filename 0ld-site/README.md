@@ -1,2 +1,0 @@
-# Portfolio
-Portfolio Guido Calciano.

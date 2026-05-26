@@ -135,8 +135,9 @@ section .title2::after, .title::after{
 }
 
 .navbar .version{
+    font-size:18px;
     color:  #fff;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .navbar.sticky .logo a span{

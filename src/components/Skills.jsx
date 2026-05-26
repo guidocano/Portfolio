@@ -19,10 +19,10 @@ export default function Skills () {
                 <span>JavaScript / TypeScript</span>
               </div>
 
-              {/* <div>
+              <div>
                 <i className="fa-brands fa-node-js"></i>
-                <span>Node.js / Express</span>
-              </div> */}
+                <span>Node.js</span>
+              </div>
 
               <div>
                 <i className="fas fa-database"></i>
