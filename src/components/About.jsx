@@ -47,7 +47,7 @@ export default function About() {
           <div className="buttonContainer cvs">
                       <br/>
             <a
-              href="./assets/CV_Guido_Calciano_Software_Developer.pdf"
+              href="./assets/Guido_Calciano_Software_Developer_CV.pdf"
               target="_blank"
               rel="noreferrer"
             >
