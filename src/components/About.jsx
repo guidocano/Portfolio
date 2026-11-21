@@ -27,13 +27,21 @@ export default function About() {
               I'm Guido and I'm <span ref={el2}></span>
             </div>
             <p>
-              Analytical Software Developer with over 3 years of experience delivering high-impact solutions within{" "}
-              <strong>global corporate environments.</strong> I specialize in bridging
-              complex business requirements with scalable technical solutions, combining my
-              background in <strong>Psychology (UBA)</strong> with{" "}
-              <strong>technical training (UTN)</strong> to build intuitive, user-centric software.
+              I'm a software developer based in Buenos Aires, Argentina (GMT-3). Since 2023 I've been
+              building business applications and process automations for global teams at{" "}
+              <strong>Boehringer Ingelheim</strong>, working in English every day with stakeholders
+              across the US and Europe.
               <br/><br/>
-              My core expertise spans <strong>frontend development</strong> and <strong>enterprise cloud solutions</strong>, engineering robust applications using <strong>JavaScript, React.js, Next.js, and SQL.</strong> Experienced in working within agile cross-functional teams under <strong>Scrum</strong> methodologies, I manage modern software lifecycles and technical documentation fluently in both native Spanish and C2-certified English.
+              My main focus now is web development with <strong>React</strong>, <strong>Next.js</strong>{" "}
+              and <strong>TypeScript</strong>. My most recent project is{" "}
+              <a href="https://sellando.com.ar" target="_blank" rel="noreferrer">Stampit</a>, a travel
+              social network where users collect illustrated stamps for the places they visit,
+              starting with Argentina. I built it end to end, from product and design to deployment, using AI-assisted
+              development, and it's live in production.
+              <br/><br/>
+              I hold a degree in <strong>Psychology</strong> from the University of Buenos Aires, which
+              shapes how I approach products: I think about the people using them as much as the code
+              behind them.
             </p>
           </div>
           <div className="buttonContainer cvs">

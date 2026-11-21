@@ -1,16 +1,28 @@
-# React + Vite
+# guidodev.com.ar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio: who I am, the projects I've built and how to reach me.
 
-Currently, two official plugins are available:
+**Live site:** https://guidodev.com.ar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Built with
 
-## React Compiler
+- React 19 + Vite
+- Plain CSS (responsive, no UI framework)
+- Typed.js for the hero animation
+- Font Awesome icons
+- Deployed to GitHub Pages with a custom domain
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run locally
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deploy
+
+```bash
+npm run deploy
+```
+
+Builds the site and publishes the `dist` folder to the `gh-pages` branch.

@@ -26,7 +26,7 @@ export default function Skills () {
 
               <div>
                 <i className="fas fa-database"></i>
-                <span>SQL</span>
+                <span>SQL / Supabase</span>
               </div>
 
               <div>
@@ -38,10 +38,15 @@ export default function Skills () {
                 <i className="fa-brands fa-html5"></i>
                 <span>HTML5 / CSS3</span>
               </div>
+
+              <div>
+                <i className="fa-solid fa-wand-magic-sparkles"></i>
+                <span>AI-assisted coding</span>
+              </div>
             </div>
 
             <div className="column">
-              <div className="text">Business Applications & Cloud</div>
+              <div className="text">Business Apps & Automation</div>
 
               <div>
                 <i className="fa-brands fa-windows"></i>
@@ -69,36 +74,12 @@ export default function Skills () {
               <div>
                 <div>
                   <i className="fas fa-globe-europe"></i>
-                  <span id="lang"> English: Bilingual</span>
+                  <span className="lang">English:</span> <span>Bilingual (C2)</span>
                 </div>
 
                 <div>
                   <i className="fas fa-globe-americas"></i>
-                  <span id="lang"> Spanish:</span> <span> Native</span>
-                </div>
-
-                <br />
-                <div className="text">Soft Skills:</div>
-                <div>
-                  <div>
-                    <i className="fas fa-toolbox"></i>
-                    <span> Problem-Solving</span>
-                  </div>
-
-                  <div>
-                    <i className="fa-solid fa-chart-column"></i>
-                    <span>&ensp;Analytical Thinking</span>
-                  </div>
-
-                  <div>
-                    <i className="fas fa-users"></i>
-                    <span>Agile Teamwork</span>
-                  </div>
-
-                  <div>
-                    <i className="fa-solid fa-code-compare"></i>
-                    <span>Adaptability</span>
-                  </div>
+                  <span className="lang">Spanish:</span> <span>Native</span>
                 </div>
               </div>
             </div>

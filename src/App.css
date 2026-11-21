@@ -433,15 +433,20 @@ color:#2878c9;
     background: #111;
     content: "latest works";
 }
+.services .serv-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    align-items: stretch;
+}
 .services .serv-content .card{
-    width: calc(33% - 20px);
+    position: relative;
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-bottom: 20px;
     border: 5px #111 solid;
 }
 .services .serv-content .card:hover{
@@ -515,7 +520,7 @@ color:#2878c9;
    font-weight: 600;
 }
 
-#lang{
+.lang{
     font-weight: 600;
  }
 
@@ -886,9 +891,8 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
+    .services .serv-content{
+        grid-template-columns: repeat(2, 1fr);
     }
     .skills .skills-content .column,
     .contact .contact-content .column{
@@ -911,8 +915,8 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
-        width: 100%;
+    .services .serv-content{
+        grid-template-columns: 1fr;
     }
 
     .text2{
@@ -979,4 +983,45 @@ footer span a:hover{
 
 
 
+}
+/* inline links inside the About text */
+.about .about-content p a{
+    color: #2878c9;
+    font-weight: 600;
+}
+.about .about-content p a:hover{
+    text-decoration: underline;
+}
+
+/* "Latest" badge on a project card */
+.services .serv-content .card .badge{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #2878c9;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .badge{
+    background: #fff;
+    color: #2878c9;
+}
+
+/* "More on GitHub" link below the project cards */
+.services .more-projects{
+    text-align: center;
+    margin-top: 30px;
+}
+.services .more-projects a{
+    color: #2878c9;
+    font-weight: 500;
+}
+.services .more-projects a:hover{
+    text-decoration: underline;
 }

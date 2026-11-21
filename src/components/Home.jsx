@@ -10,9 +10,8 @@ export default function Home () {
           const typed1 = new Typed(el1.current, {
             strings: [
               "a developer.",
-              "a critical thinker.",
-              "a technical problem solver.",
-              "a business solution analyst.",
+              "a product maker.",
+              "a problem solver.",
             ],
             typeSpeed: 100,
             backSpeed: 60,

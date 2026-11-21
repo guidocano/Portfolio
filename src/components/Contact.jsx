@@ -46,11 +46,11 @@ export default function Contact() {
 
 
                 <div className="row">
-                  <a target="_blank" href="https://www.linkedin.com/in/guidocalciano/"><i className="fab fa-linkedin"/></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/gcalciano/"><i className="fab fa-linkedin"/></a>
                   <div className="info">
                     <div className="head">
-                      <a target="_blank" href="https://www.linkedin.com/in/guidocalciano/">
-                        /guidocalciano
+                      <a target="_blank" href="https://www.linkedin.com/in/gcalciano/">
+                        /gcalciano
                       </a>
                     </div>
                     <div className="sub-title">Linkedin.</div>

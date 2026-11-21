@@ -9,16 +9,18 @@ export default function Projects() {
 
           <div className="card">
             <a
-              href="https://amazon.guidodev.com.ar/"
+              href="https://sellando.com.ar"
               target="_blank"
               rel="noreferrer"
               className="hyper"
             >
+              <span className="badge">Latest</span>
               <div className="box">
-                <i class="fa-brands fa-amazon"></i>
-                <div className="text">E-Commerce Platform</div>
-                <p>Full-stack CRUD application built with React and Node.js.</p>
-                <p>Hosted on AWS.</p>
+                <i className="fa-solid fa-plane-departure"></i>
+                <div className="text">Stampit</div>
+                <p>
+                  Travel social network to collect passport stamps of the places you visit. Built with Next.js and Supabase.
+                </p>
               </div>
             </a>
           </div>
@@ -31,10 +33,10 @@ export default function Projects() {
               className="hyper"
             >
               <div className="box">
-                <i className="fa-solid fa-ticket"></i>
+                <i className="fa-solid fa-film"></i>
                 <div className="text">Movie Tracker</div>
                 <p>
-                  React app featuring secure authentication, movie search, and user favorites.
+                  React app to search movies, browse upcoming releases and save favorites.
                 </p>
               </div>
             </a>
@@ -48,7 +50,7 @@ export default function Projects() {
               className="hyper"
             >
               <div className="box">
-                <i className="fa-brands fa-google"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
                 <div className="text">Global Search Engine</div>
                 <p>
                   React interface integrating Google, YouTube, and Image REST APIs in a single site.
@@ -68,46 +70,18 @@ export default function Projects() {
                 <i className="take-note fa-solid fa-note-sticky"></i>
                 <div className="text">Sticky Notes App</div>
                 <p>
-                 React interactive productivity tool with full CRUD operations, filtering, and archiving.
+                  React productivity tool with full CRUD operations, filtering, and archiving.
                 </p>
-              </div>
-            </a>
-          </div>
-
-          <div className="card">
-            <a
-              target="_blank"
-              href="https://guidocano.github.io/RTS.js/"
-              className="hyper"
-            >
-              <div className="box">
-                <i className="fas fa-road"></i>
-                <div className="text">Text Adventure Engine</div>
-                <p>
-                  Interactive game developed with Javascript. Play it!
-                </p>
-                <br/>
-              </div>
-            </a>
-          </div>
-
-          <div className="card">
-            <a
-              href="https://github.com/guidocano"
-              target="_blank"
-              rel="noreferrer"
-              className="hyper"
-            >
-              <div className="box">
-                <i className="fas fa-code"></i>
-                <div className="text">Other Projects!</div>
-                <p>Go to Github.</p>
-                <br/>
-                <p>&ensp;</p>
               </div>
             </a>
           </div>
         </div>
+
+        <p className="more-projects">
+          <a href="https://github.com/guidocano" target="_blank" rel="noreferrer">
+            More on GitHub <i className="fa-solid fa-arrow-right"></i>
+          </a>
+        </p>
       </div>
     </section>
   );
