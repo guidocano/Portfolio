@@ -14,6 +14,8 @@ My personal portfolio: who I am, the projects I've built and how to reach me.
 
 ## Run locally
 
+Requires Node 24 (version pinned in `.nvmrc`; run `nvm use` if you use nvm).
+
 ```bash
 npm install
 npm run dev
