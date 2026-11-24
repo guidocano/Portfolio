@@ -20,7 +20,7 @@ export default function ScrollUpBtn() {
     return (
       <button
         className={`scroll-up-btn ${showScrollBtn ? "show" : ""}`}
-        onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <i className="fas fa-angle-up"></i>
       </button>
