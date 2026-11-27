@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="logo">
           <a href="#">
             <span className="logo-color">guidodev</span>.com.ar
-            <span className="version"> | v1.2.6</span>
+            {/* <span className="version"> | v1.2.6</span> */}
           </a>
         </div>
         <ul className={`menu ${isMenuOpen ? "active" : ""}`}>
